@@ -8,16 +8,14 @@
     "url": "git+https://github.com/FaridSafi/react-native-gifted-chat.git"
   },
   "keywords": [
-    "android",
-    "ios",
-    "react-native",
+    "web",
     "react",
     "react-component",
     "messenger",
     "message",
     "chat"
   ],
-  "author": "Farid Safi",
+  "author": "João Pereira",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/FaridSafi/react-native-gifted-chat/issues"
@@ -29,13 +27,13 @@
     "eslint-plugin-react-native": "^2.0.0"
   },
   "dependencies": {
-    "@exponent/react-native-action-sheet": "git+https://github.com/FaridSafi/react-native-action-sheet.git",
     "md5": "^2.1.0",
     "moment": "^2.13.0",
-    "react-native-communications": "^2.1.0",
-    "react-native-dismiss-keyboard": "^1.0.0",
-    "react-native-invertible-scroll-view": "^1.0.0",
-    "react-native-parsed-text": "^0.0.15",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-linkify": "^0.1.3",
+    "react-tappable": "^0.8.4",
+    "react-text-input": "0.0.7",
     "shallowequal": "^0.2.2"
   }
 }

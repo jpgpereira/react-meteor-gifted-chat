@@ -1,9 +1,4 @@
-import React from 'react';
-import {
-  Image,
-  StyleSheet,
-  View,
-} from 'react-native';
+import React, { Component } from 'react';
 
 import GiftedAvatar from './GiftedAvatar';
 
@@ -24,11 +19,11 @@ export default class Avatar extends React.Component {
   render() {
     if (this.props.isSameUser(this.props.currentMessage, this.props.nextMessage) && this.props.isSameDay(this.props.currentMessage, this.props.nextMessage)) {
       return (
-        <View style={[styles[this.props.position].container, this.props.containerStyle[this.props.position]]}>
+        <div style={[styles[this.props.position].container, this.props.containerStyle[this.props.position]]}>
           <GiftedAvatar
             avatarStyle={StyleSheet.flatten([styles[this.props.position].image, this.props.imageStyle[this.props.position]])}
           />
-        </View>
+  </div>
       );
     }
     return (
@@ -40,7 +35,7 @@ export default class Avatar extends React.Component {
 }
 
 const styles = {
-  left: StyleSheet.create({
+  left: {
     container: {
       marginRight: 8,
     },
@@ -49,8 +44,8 @@ const styles = {
       width: 36,
       borderRadius: 18,
     },
-  }),
-  right: StyleSheet.create({
+  },
+  right: {
     container: {
       marginLeft: 8,
     },
@@ -59,7 +54,7 @@ const styles = {
       width: 36,
       borderRadius: 18,
     },
-  }),
+  },
 };
 
 Avatar.defaultProps = {
