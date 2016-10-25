@@ -1,3 +1,3 @@
-import GiftedChat from './src/GiftedChat';
+import GiftedChat from './src/GiftedChat.js';
 
 export default GiftedChat;
