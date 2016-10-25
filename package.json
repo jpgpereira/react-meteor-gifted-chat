@@ -23,7 +23,7 @@
   "homepage": "https://github.com/jpgpereira/react-meteor-gifted-chat#readme",
   "devDependencies": {
     "eslint": "^3.2.2",
-    "eslint-plugin-react": "^6.0.0",
+    "eslint-plugin-react": "^6.0.0"
   },
   "dependencies": {
     "md5": "^2.1.0",
