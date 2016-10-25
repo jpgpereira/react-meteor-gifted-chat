@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import moment from 'moment/min/moment-with-locales.min';
 
-import Actions from './Actions';
 import Avatar from './Avatar';
 import Bubble from './Bubble';
 import MessageImage from './MessageImage';
@@ -321,49 +320,20 @@ class GiftedChat extends React.Component {
     render() {
         if (this.state.isInitialized === true) {
             return (
-                <ActionSheet ref={component => this._actionSheetRef = component}>
-                    <View
+                    <div
                         style={styles.container}
-                        onLayout={(e) => {
-                            if (Platform.OS === 'android') {
-                                // fix an issue when keyboard is dismissing during the initialization
-                                const layout = e.nativeEvent.layout;
-                                if (this.getMaxHeight() !== layout.height && this.getIsFirstLayout() === true) {
-                                    this.setMaxHeight(layout.height);
-                                    this.setState({
-                                        messagesContainerHeight: this.prepareMessagesContainerHeight(this.getMaxHeight() - this.getMinInputToolbarHeight()),
-                                    });
-                                }
-                            }
-                            if (this.getIsFirstLayout() === true) {
-                                this.setIsFirstLayout(false);
-                            }
-                        }}
                         >
                         {this.renderMessages()}
                         {this.renderInputToolbar()}
-                    </View>
-                </ActionSheet>
+                    </div>
             );
         }
         return (
-            <View
+            <div
                 style={styles.container}
-                onLayout={(e) => {
-                    const layout = e.nativeEvent.layout;
-                    this.setMaxHeight(layout.height);
-                    InteractionManager.runAfterInteractions(() => {
-                        this.setState({
-                            isInitialized: true,
-                            text: '',
-                            composerHeight: MIN_COMPOSER_HEIGHT,
-                            messagesContainerHeight: this.prepareMessagesContainerHeight(this.getMaxHeight() - this.getMinInputToolbarHeight()),
-                        });
-                    });
-                }}
                 >
                 {this.renderLoading()}
-            </View>
+            </div>
         );
     }
 }
@@ -389,7 +359,6 @@ GiftedChat.defaultProps = {
     locale: null,
     isAnimated: false,
     renderAccessory: null,
-    renderActions: null,
     renderAvatar: null,
     renderBubble: null,
     renderFooter: null,
@@ -418,7 +387,6 @@ GiftedChat.propTypes = {
     locale: React.PropTypes.string,
     isAnimated: React.PropTypes.bool,
     renderAccessory: React.PropTypes.func,
-    renderActions: React.PropTypes.func,
     renderAvatar: React.PropTypes.func,
     renderBubble: React.PropTypes.func,
     renderFooter: React.PropTypes.func,
@@ -441,7 +409,6 @@ GiftedChat.propTypes = {
 
 export {
     GiftedChat,
-    Actions,
     Avatar,
     Bubble,
     MessageImage,

@@ -1,11 +1,11 @@
 {
-  "name": "react-native-gifted-chat",
+  "name": "react-meteor-gifted-chat",
   "version": "0.0.10",
   "description": "The most complete chat UI for React Native",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FaridSafi/react-native-gifted-chat.git"
+    "url": "git+https://github.com/jpgpereira/react-meteor-gifted-chat.git"
   },
   "keywords": [
     "web",
@@ -18,13 +18,12 @@
   "author": "João Pereira",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FaridSafi/react-native-gifted-chat/issues"
+    "url": "https://github.com/jpgpereira/react-meteor-gifted-chat/issues"
   },
-  "homepage": "https://github.com/FaridSafi/react-native-gifted-chat#readme",
+  "homepage": "https://github.com/jpgpereira/react-meteor-gifted-chat#readme",
   "devDependencies": {
     "eslint": "^3.2.2",
     "eslint-plugin-react": "^6.0.0",
-    "eslint-plugin-react-native": "^2.0.0"
   },
   "dependencies": {
     "md5": "^2.1.0",
@@ -32,6 +31,7 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-linkify": "^0.1.3",
+    "react-list": "^0.8.0",
     "react-tappable": "^0.8.4",
     "react-text-input": "0.0.7",
     "shallowequal": "^0.2.2"
