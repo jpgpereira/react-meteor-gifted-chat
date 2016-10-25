@@ -34,6 +34,7 @@
     "react-list": "^0.8.0",
     "react-tappable": "^0.8.4",
     "react-text-input": "0.0.7",
+    "react-virtualized": "^8.2.0",
     "shallowequal": "^0.2.2"
   }
 }

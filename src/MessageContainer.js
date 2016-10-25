@@ -121,7 +121,7 @@ export default class MessageContainer extends React.Component {
     renderScrollComponent(props) {
         const invertibleScrollViewProps = this.props.invertibleScrollViewProps;
         return (
-            <InvertibleScrollView
+            <List
                 {...props}
                 {...invertibleScrollViewProps}
                 ref={component => this._invertibleScrollViewRef = component}
@@ -132,7 +132,7 @@ export default class MessageContainer extends React.Component {
     render() {
         return (
             <div ref='container' style={{flex:1}}>
-                <ListView
+                <List
                     enableEmptySections={true}
                     keyboardShouldPersistTaps={true}
                     automaticallyAdjustContentInsets={false}
