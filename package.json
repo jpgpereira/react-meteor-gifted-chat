@@ -2,7 +2,7 @@
   "name": "react-meteor-gifted-chat",
   "version": "0.0.10",
   "description": "The most complete chat UI for React Native",
-  "main": "index.js",
+  "main": "src/GiftedChat.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jpgpereira/react-meteor-gifted-chat.git"
