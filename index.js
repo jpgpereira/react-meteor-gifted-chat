@@ -1,1 +1,3 @@
-export * from './src/GiftedChat';
+import GiftedChat from './src/GiftedChat';
+
+export GiftedChat;
